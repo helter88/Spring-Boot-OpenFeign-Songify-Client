@@ -1,0 +1,8 @@
+package com.example.consume_rest_feign;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public record Value(Long id, String quote) {
+    
+}
